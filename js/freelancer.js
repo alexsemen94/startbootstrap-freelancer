@@ -123,7 +123,8 @@
 
   var player;
   function onYouTubePlayerAPIReady(id) {
-    player = new YT.Player('teather-1', {
+    $('#video-teaser').html('<div id="video-placeholder"></div>');
+    player = new YT.Player('video-placeholder', {
       height: '360',
       width: '640',
       videoId: id
